@@ -16,6 +16,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
     boolean logon=false;
     private static final int RC_Login=10;
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                card.setValue(51);
+                card.setValue(new Random().nextInt(51));
             }
         });
         if (!logon){

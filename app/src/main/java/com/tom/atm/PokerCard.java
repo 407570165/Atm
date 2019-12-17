@@ -12,7 +12,6 @@ public class PokerCard extends ConstraintLayout {
     private ImageView typeImage;
     private TextView leftPoint;
     private TextView rightPoint;
-
     public PokerCard(Context context) {
         super(context);
     }
